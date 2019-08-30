@@ -6,6 +6,19 @@
 	<groupId>com.umeng.message</groupId>
 	<artifactId>push</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	
+	<distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+			<name>Nexus Releases Repository</name>
+			<url>http://182.151.203.150:8888/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>Nexus Snapshots Repository</name>
+			<url>http://182.151.203.150:8888/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<dependencies>
 		<dependency>
