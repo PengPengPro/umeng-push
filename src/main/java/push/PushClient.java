@@ -38,6 +38,7 @@ public class PushClient {
         HttpPost post = new HttpPost(url);
         post.setHeader("User-Agent", USER_AGENT);
         StringEntity se = new StringEntity(postBody, "UTF-8");
+        System.out.println(postBody);
         post.setEntity(se);
         // Send the post request and get the response
         HttpResponse response = client.execute(post);
