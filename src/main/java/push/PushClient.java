@@ -52,10 +52,11 @@ public class PushClient {
         System.out.println(result.toString());
         if (status == 200) {
             System.out.println("Notification sent successfully.");
+            return true;
         } else {
             System.out.println("Failed to send the notification!");
+            return false;
         }
-        return true;
     }
 
 	// Upload file with device_tokens to Umeng
