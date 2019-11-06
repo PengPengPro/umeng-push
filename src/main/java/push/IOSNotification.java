@@ -83,4 +83,8 @@ public abstract class IOSNotification extends UmengNotification {
 	public void setContentAvailable(Integer contentAvailable) throws Exception {
     	setPredefinedKeyValue("content-available", contentAvailable);
     }
+	
+	public void setStartTime(String startTime) throws Exception {
+		setPredefinedKeyValue("start_time", startTime);
+	}
 }
