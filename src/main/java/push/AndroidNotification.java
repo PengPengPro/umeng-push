@@ -99,14 +99,15 @@ public abstract class AndroidNotification extends UmengNotification {
 			extraJson = new JSONObject();
 			payloadJson.put("extra", extraJson);
 		}
-		if(key.equals("routerParam")) {
-			JSONObject json = new JSONObject();
-			json.put("type", "map");
-			json.put("value", value);
-			extraJson.put(key, json);
-		}else {
-			extraJson.put(key, value);
-		}
+//		if(key.equals("routerParam")) {
+//			JSONObject json = new JSONObject();
+//			json.put("type", "map");
+//			json.put("value", value);
+//			extraJson.put(key, json);
+//		}else {
+//			extraJson.put(key, value);
+//		}
+		extraJson.put(key, value);
 		return true;
 	}
 	

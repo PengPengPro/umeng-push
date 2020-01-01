@@ -64,14 +64,15 @@ public abstract class IOSNotification extends UmengNotification {
 			payloadJson = new JSONObject();
 			rootJson.put("payload", payloadJson);
 		}
-		if(key.equals("routerParam")) {
-			JSONObject json = new JSONObject();
-			json.put("type", "map");
-			json.put("value", value);
-			payloadJson.put(key, json);
-		}else {
-			payloadJson.put(key, value);
-		}
+//		if(key.equals("routerParam")) {
+//			JSONObject json = new JSONObject();
+//			json.put("type", "map");
+//			json.put("value", value);
+//			payloadJson.put(key, json);
+//		}else {
+//			payloadJson.put(key, value);
+//		}
+		payloadJson.put(key, value);
 		return true;
 	}
 
